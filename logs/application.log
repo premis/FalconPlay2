@@ -1,0 +1,99 @@
+2013-08-07 20:10:23,548 - [INFO] - from play in main 
+Listening for HTTP on /0.0.0.0:9000
+
+2013-08-07 20:10:29,230 - [INFO] - from play in play-internal-execution-context-1 
+Application started (Dev)
+
+2013-08-07 20:10:29,413 - [INFO] - from application in Thread-7 
+ [*] Waiting for messages. To exit press CTRL+C
+
+2013-08-07 20:10:33,169 - [INFO] - from application in play-akka.actor.default-dispatcher-9 
+placing message on queue "dummy message"
+
+2013-08-07 20:10:33,178 - [INFO] - from application in play-akka.actor.default-dispatcher-9 
+ published '"dummy message"'
+
+2013-08-07 20:10:33,190 - [INFO] - from application in Thread-7 
+ consuming '"dummy message"'
+
+2013-08-07 20:10:33,220 - [INFO] - from application in Thread-7 
+ persisted '1375895433193','"dummy message"'
+
+2013-08-07 20:10:35,418 - [INFO] - from application in iteratee-execution-context-2 
+removed play.mvc.WebSocket$In@26473f4c
+
+2013-08-07 20:10:39,882 - [INFO] - from application in play-akka.actor.default-dispatcher-2 
+placing message on queue "dummy message test 2"
+
+2013-08-07 20:10:39,888 - [INFO] - from application in play-akka.actor.default-dispatcher-2 
+ published '"dummy message test 2"'
+
+2013-08-07 20:10:39,892 - [INFO] - from application in Thread-7 
+ consuming '"dummy message test 2"'
+
+2013-08-07 20:10:39,893 - [INFO] - from application in Thread-7 
+ persisted '1375895439892','"dummy message test 2"'
+
+2013-08-07 20:10:43,393 - [INFO] - from application in play-akka.actor.default-dispatcher-3 
+placing message on queue "dummy message test 3"
+
+2013-08-07 20:10:43,401 - [INFO] - from application in play-akka.actor.default-dispatcher-3 
+ published '"dummy message test 3"'
+
+2013-08-07 20:10:43,403 - [INFO] - from application in Thread-7 
+ consuming '"dummy message test 3"'
+
+2013-08-07 20:10:43,407 - [INFO] - from application in Thread-7 
+ persisted '1375895443406','"dummy message test 3"'
+
+2013-08-07 20:10:45,109 - [INFO] - from application in iteratee-execution-context-2 
+removed play.mvc.WebSocket$In@18e589bd
+
+2013-08-07 20:11:02,809 - [INFO] - from application in iteratee-execution-context-2 
+removed play.mvc.WebSocket$In@77026e40
+
+2013-08-07 20:11:27,440 - [INFO] - from application in play-akka.actor.default-dispatcher-12 
+placing message on queue "sample things"
+
+2013-08-07 20:11:27,445 - [INFO] - from application in play-akka.actor.default-dispatcher-12 
+ published '"sample things"'
+
+2013-08-07 20:11:27,447 - [INFO] - from application in Thread-7 
+ consuming '"sample things"'
+
+2013-08-07 20:11:27,448 - [INFO] - from application in Thread-7 
+ persisted '1375895487448','"sample things"'
+
+2013-08-07 20:11:29,541 - [INFO] - from application in iteratee-execution-context-1 
+removed play.mvc.WebSocket$In@5052d2c4
+
+2013-08-07 20:11:45,144 - [INFO] - from application in play-akka.actor.default-dispatcher-6 
+placing message on queue "sample thingss"
+
+2013-08-07 20:11:45,150 - [INFO] - from application in play-akka.actor.default-dispatcher-6 
+ published '"sample thingss"'
+
+2013-08-07 20:11:45,151 - [INFO] - from application in Thread-7 
+ consuming '"sample thingss"'
+
+2013-08-07 20:11:45,152 - [INFO] - from application in Thread-7 
+ persisted '1375895505151','"sample thingss"'
+
+2013-08-07 20:11:49,835 - [INFO] - from application in play-akka.actor.default-dispatcher-6 
+placing message on queue "whatever"
+
+2013-08-07 20:11:49,842 - [INFO] - from application in play-akka.actor.default-dispatcher-6 
+ published '"whatever"'
+
+2013-08-07 20:11:49,845 - [INFO] - from application in Thread-7 
+ consuming '"whatever"'
+
+2013-08-07 20:11:49,847 - [INFO] - from application in Thread-7 
+ persisted '1375895509845','"whatever"'
+
+2013-08-07 20:11:52,900 - [INFO] - from application in iteratee-execution-context-2 
+removed play.mvc.WebSocket$In@461b29f
+
+2013-08-07 20:12:02,104 - [INFO] - from application in iteratee-execution-context-2 
+removed play.mvc.WebSocket$In@767ca7f0
+

@@ -1,0 +1,35 @@
+body {
+    width: 900px;
+
+}
+
+.messages {
+    margin-left: 0px; margin-right: 0px;
+    width: 900px;
+}
+
+.messagesHeader{
+    font-size: x-large;
+    margin-bottom: 30px;
+}
+
+.messageEntry {
+    width: 900px;
+    border-bottom: 1px solid gray;
+}
+
+.messageKey {
+    color: cornflowerblue;
+    float: left;
+    width:200px;
+}
+
+.messageValue {
+    width:500px;
+}
+
+.operations{
+    margin-top: 20px;
+    background-color: cornflowerblue;
+    padding:20px;
+}

@@ -1,0 +1,40 @@
+@(messages: List[Message])
+
+@main("messages list"){
+
+
+
+    <div class="messages">
+
+        <div class="messagesHeader">Redis persisted messages: </div>
+
+        <div class="messageEntry" style="font-weight: bold">
+            <div class="messageKey"> key </div>
+            <div class="messageValue"> value </div>
+        </div>
+
+        @for(message <- messages) {
+            <div class="messageEntry">
+                <div class="messageKey"> @message.getKey() </div>
+                <div class="messageValue"> @message.getValue() </div>
+            </div>
+            <br style="clear:both"/>
+        }
+
+    </div>
+
+    <div class="notification">
+
+    </div>
+
+    <div class="operations">
+
+        <input id="messageTextBox" type="text" style="width: 400px;" value="dummy message"> </input>
+
+        <button id="messageSendButton">Send Message</button>
+
+        <button id="messagesDeleteAllButton">Delete All Messages</button>
+
+    </div>
+
+}
