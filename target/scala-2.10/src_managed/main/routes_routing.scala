@@ -1,6 +1,6 @@
 // @SOURCE:/Users/premis/Documents/workspace/FalconPlay/conf/routes
-// @HASH:b0ae279b51821110937c462f9c8f0be7ca0e4d85
-// @DATE:Wed Aug 07 19:45:40 EEST 2013
+// @HASH:3601b03765a9f0dd561b6db06f48a0eb41c31077
+// @DATE:Fri Aug 09 02:13:54 EEST 2013
 
 
 import play.core._
@@ -37,19 +37,19 @@ private[this] lazy val controllers_Assets_at1 = Route("GET", PathPattern(List(St
         
 
 // @LINE:24
-private[this] lazy val controllers_Messager_getMessagerPage2 = Route("GET", PathPattern(List(StaticPart(Routes.prefix),StaticPart(Routes.defaultPrefix),StaticPart("messager"))))
+private[this] lazy val controllers_MessagerController_getMessagerPage2 = Route("GET", PathPattern(List(StaticPart(Routes.prefix),StaticPart(Routes.defaultPrefix),StaticPart("messager"))))
         
 
 // @LINE:26
-private[this] lazy val controllers_Messager_postMessage3 = Route("POST", PathPattern(List(StaticPart(Routes.prefix),StaticPart(Routes.defaultPrefix),StaticPart("messager/pushmessage"))))
+private[this] lazy val controllers_MessagerController_postMessage3 = Route("POST", PathPattern(List(StaticPart(Routes.prefix),StaticPart(Routes.defaultPrefix),StaticPart("messager/pushmessage"))))
         
 
 // @LINE:28
-private[this] lazy val controllers_Messager_registerSocket4 = Route("GET", PathPattern(List(StaticPart(Routes.prefix),StaticPart(Routes.defaultPrefix),StaticPart("messager/handle"))))
+private[this] lazy val controllers_MessagerController_registerSocket4 = Route("GET", PathPattern(List(StaticPart(Routes.prefix),StaticPart(Routes.defaultPrefix),StaticPart("messager/handle"))))
         
 
 // @LINE:30
-private[this] lazy val controllers_Messager_deleteAllMessages5 = Route("POST", PathPattern(List(StaticPart(Routes.prefix),StaticPart(Routes.defaultPrefix),StaticPart("messager/deleteall"))))
+private[this] lazy val controllers_MessagerController_deleteAllMessages5 = Route("POST", PathPattern(List(StaticPart(Routes.prefix),StaticPart(Routes.defaultPrefix),StaticPart("messager/deleteall"))))
         
 def documentation = List(("""GET""", prefix,"""controllers.Application.index()"""),("""GET""", prefix + (if(prefix.endsWith("/")) "" else "/") + """assets/$file<.+>""","""controllers.Assets.at(path:String = "/public", file:String)"""),("""GET""", prefix + (if(prefix.endsWith("/")) "" else "/") + """messager""","""controllers.MessagerController.getMessagerPage()"""),("""POST""", prefix + (if(prefix.endsWith("/")) "" else "/") + """messager/pushmessage""","""controllers.MessagerController.postMessage()"""),("""GET""", prefix + (if(prefix.endsWith("/")) "" else "/") + """messager/handle""","""controllers.MessagerController.registerSocket()"""),("""POST""", prefix + (if(prefix.endsWith("/")) "" else "/") + """messager/deleteall""","""controllers.MessagerController.deleteAllMessages()""")).foldLeft(List.empty[(String,String,String)]) { (s,e) => e.asInstanceOf[Any] match {
   case r @ (_,_,_) => s :+ r.asInstanceOf[(String,String,String)]
@@ -76,7 +76,7 @@ case controllers_Assets_at1(params) => {
         
 
 // @LINE:24
-case controllers_Messager_getMessagerPage2(params) => {
+case controllers_MessagerController_getMessagerPage2(params) => {
    call { 
         invokeHandler(controllers.MessagerController.getMessagerPage(), HandlerDef(this, "controllers.MessagerController", "getMessagerPage", Nil,"GET", """""", Routes.prefix + """messager"""))
    }
@@ -84,7 +84,7 @@ case controllers_Messager_getMessagerPage2(params) => {
         
 
 // @LINE:26
-case controllers_Messager_postMessage3(params) => {
+case controllers_MessagerController_postMessage3(params) => {
    call { 
         invokeHandler(controllers.MessagerController.postMessage(), HandlerDef(this, "controllers.MessagerController", "postMessage", Nil,"POST", """""", Routes.prefix + """messager/pushmessage"""))
    }
@@ -92,7 +92,7 @@ case controllers_Messager_postMessage3(params) => {
         
 
 // @LINE:28
-case controllers_Messager_registerSocket4(params) => {
+case controllers_MessagerController_registerSocket4(params) => {
    call { 
         invokeHandler(controllers.MessagerController.registerSocket(), HandlerDef(this, "controllers.MessagerController", "registerSocket", Nil,"GET", """""", Routes.prefix + """messager/handle"""))
    }
@@ -100,7 +100,7 @@ case controllers_Messager_registerSocket4(params) => {
         
 
 // @LINE:30
-case controllers_Messager_deleteAllMessages5(params) => {
+case controllers_MessagerController_deleteAllMessages5(params) => {
    call { 
         invokeHandler(controllers.MessagerController.deleteAllMessages(), HandlerDef(this, "controllers.MessagerController", "deleteAllMessages", Nil,"POST", """""", Routes.prefix + """messager/deleteall"""))
    }

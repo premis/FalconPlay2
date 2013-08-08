@@ -1,6 +1,6 @@
 // @SOURCE:/Users/premis/Documents/workspace/FalconPlay/conf/routes
-// @HASH:b0ae279b51821110937c462f9c8f0be7ca0e4d85
-// @DATE:Wed Aug 07 19:45:40 EEST 2013
+// @HASH:3601b03765a9f0dd561b6db06f48a0eb41c31077
+// @DATE:Fri Aug 09 02:13:54 EEST 2013
 
 import Routes.{prefix => _prefix, defaultPrefix => _defaultPrefix}
 import play.core._
@@ -26,7 +26,7 @@ package controllers {
 // @LINE:28
 // @LINE:26
 // @LINE:24
-class ReverseMessager {
+class ReverseMessagerController {
     
 
 // @LINE:26
@@ -97,7 +97,7 @@ package controllers.javascript {
 // @LINE:28
 // @LINE:26
 // @LINE:24
-class ReverseMessager {
+class ReverseMessagerController {
     
 
 // @LINE:26
@@ -198,7 +198,7 @@ package controllers.ref {
 // @LINE:28
 // @LINE:26
 // @LINE:24
-class ReverseMessager {
+class ReverseMessagerController {
     
 
 // @LINE:26
