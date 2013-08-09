@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="SBT: org.sedis:sedis_2.10.0:1.1.1">
+    <CLASSES>
+      <root url="jar:///opt/play-2.1.2/repository/cache/org.sedis/sedis_2.10.0/jars/sedis_2.10.0-1.1.1.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

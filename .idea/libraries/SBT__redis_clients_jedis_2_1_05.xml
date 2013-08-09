@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="SBT: redis.clients:jedis:2.1.0">
+    <CLASSES>
+      <root url="jar:///opt/play-2.1.2/repository/cache/redis.clients/jedis/jars/jedis-2.1.0.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

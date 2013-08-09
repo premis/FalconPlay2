@@ -1,48 +1,39 @@
-2013-08-09 03:33:44,919 - [INFO] - from play in main 
+2013-08-09 03:47:50,596 - [INFO] - from play in main 
 Listening for HTTP on /0.0.0.0:9000
 
-2013-08-09 03:33:48,349 - [INFO] - from play in play-internal-execution-context-1 
+2013-08-09 03:47:54,148 - [INFO] - from play in play-internal-execution-context-1 
 Application started (Dev)
 
-2013-08-09 03:33:48,490 - [INFO] - from application in Thread-15 
+2013-08-09 03:47:54,254 - [INFO] - from application in Thread-29 
  [*] Waiting for messages. To exit press CTRL+C
 
-2013-08-09 03:34:13,925 - [INFO] - from application in iteratee-execution-context-1 
-removed play.mvc.WebSocket$In@67c28a6a
+2013-08-09 03:47:54,280 - [INFO] - from application in Thread-29 
+ consuming '"dummy message"'
 
-2013-08-09 03:34:15,052 - [INFO] - from play in play-internal-execution-context-2 
-Application started (Dev)
+2013-08-09 03:47:54,320 - [INFO] - from application in Thread-29 
+ persisted '1376009274311','"dummy message"'
 
-2013-08-09 03:34:15,063 - [INFO] - from application in Thread-20 
- [*] Waiting for messages. To exit press CTRL+C
+2013-08-09 03:48:00,667 - [INFO] - from application in iteratee-execution-context-2 
+removed play.mvc.WebSocket$In@ae3e17a
 
-2013-08-09 03:34:22,408 - [INFO] - from application in play-akka.actor.default-dispatcher-11 
-placing message on queue "dummy message"
+2013-08-09 03:48:04,758 - [INFO] - from application in iteratee-execution-context-2 
+removed play.mvc.WebSocket$In@7a6d4080
 
-2013-08-09 03:34:22,416 - [INFO] - from application in play-akka.actor.default-dispatcher-11 
- published '"dummy message"'
+2013-08-09 03:48:07,890 - [INFO] - from application in play-akka.actor.default-dispatcher-6 
+placing message on queue "dummy message2"
 
-2013-08-09 03:34:25,253 - [INFO] - from application in iteratee-execution-context-1 
-removed play.mvc.WebSocket$In@12b3e42b
+2013-08-09 03:48:07,926 - [INFO] - from application in play-akka.actor.default-dispatcher-6 
+ published '"dummy message2"'
 
-2013-08-09 03:34:27,763 - [INFO] - from application in iteratee-execution-context-2 
-removed play.mvc.WebSocket$In@348fb08f
+2013-08-09 03:48:07,938 - [INFO] - from application in Thread-29 
+ consuming '"dummy message2"'
 
-2013-08-09 03:34:33,557 - [INFO] - from application in play-akka.actor.default-dispatcher-13 
-placing message on queue "dummy message5656"
+2013-08-09 03:48:07,938 - [INFO] - from application in Thread-29 
+ persisted '1376009287938','"dummy message2"'
 
-2013-08-09 03:34:33,582 - [INFO] - from application in play-akka.actor.default-dispatcher-13 
- published '"dummy message5656"'
+2013-08-09 03:48:09,685 - [INFO] - from application in iteratee-execution-context-2 
+removed play.mvc.WebSocket$In@1957f4f5
 
-2013-08-09 03:34:35,484 - [INFO] - from application in play-akka.actor.default-dispatcher-13 
-placing message on queue "dummy message5656"
-
-2013-08-09 03:34:35,493 - [INFO] - from application in play-akka.actor.default-dispatcher-13 
- published '"dummy message5656"'
-
-2013-08-09 03:34:38,140 - [INFO] - from application in iteratee-execution-context-2 
-removed play.mvc.WebSocket$In@565087b0
-
-2013-08-09 03:34:40,404 - [INFO] - from application in iteratee-execution-context-1 
-removed play.mvc.WebSocket$In@77958338
+2013-08-09 03:48:39,199 - [INFO] - from application in iteratee-execution-context-2 
+removed play.mvc.WebSocket$In@47965ff3
 

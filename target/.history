@@ -112,3 +112,7 @@ compile
 run
 reload
 idea
+compile
+run
+ls
+dist

@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="SBT: com.typesafe:play-plugins-util_2.10:2.1-RC2">
+    <CLASSES>
+      <root url="jar:///opt/play-2.1.2/repository/cache/com.typesafe/play-plugins-util_2.10/jars/play-plugins-util_2.10-2.1-RC2.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

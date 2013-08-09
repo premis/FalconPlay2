@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="SBT: commons-pool:commons-pool:1.5.5">
+    <CLASSES>
+      <root url="jar:///opt/play-2.1.2/repository/cache/commons-pool/commons-pool/jars/commons-pool-1.5.5.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>
