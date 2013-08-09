@@ -13,7 +13,6 @@ import java.io.IOException;
  */
 public class Global extends GlobalSettings {
 
-    public final static String QUEUE_NAME = "hello";
 
     @Override
     public void onStart(Application app) {

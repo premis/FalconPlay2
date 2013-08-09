@@ -18,6 +18,7 @@ import play.mvc.Result;
 import play.mvc.WebSocket;
 import redis.clients.jedis.Jedis;
 import redis.clients.jedis.JedisPool;
+import services.ConsumerService;
 import views.html.messager;
 
 
@@ -96,8 +97,8 @@ public class Messager extends Controller {
                 Connection connection = factory.newConnection();
                 Channel channel = connection.createChannel();
 
-                channel.queueDeclare(Global.QUEUE_NAME, false, false, false, null);
-                channel.basicPublish("", Global.QUEUE_NAME, null, value.getBytes());
+                channel.queueDeclare(ConsumerService.QUEUE_NAME, false, false, false, null);
+                channel.basicPublish("", ConsumerService.QUEUE_NAME, null, value.getBytes());
                 Logger.info(" published '" + value + "'");
 
                 broadcast(value+" was received from a client!");

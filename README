@@ -1,6 +1,19 @@
-This is your new Play 2.1 application
-=====================================
+This is an example application for Falcon
+=========================================
 
-This file will be packaged with your application, when using `play dist`.
+The application has a Messager class which exposes a getMessagerPage REST endpoint which returns a view
+  that displays all the messages in the Redis datastore. It also exposes a postMessage endpoint which when receives
+  a message as JSON it will parse it and put it on a RabbitMQ queue. There is a ConsumerService which runs in it's
+  own thread a AMQP consumer that will persist any messages placed on the queue into the Redis datastore.
 
-This file was modified by IntelliJ IDEA 12.1.4 for binding GitHub repository
+Every messager page will also use WebSockets to connect to the server and register for listening. We have a map of sockets
+ registered so whenever another client will load a messeger it will automatically be added to this pool. Whenever a
+ client is closed it's server socket will be removed from this pool. The map is syncrhonized. We have a broadcast method
+ which we use to notify all clients when some client posts a message. We could also send a JSON of the actual message
+ or use a more sophisticated mechanism to refresh the Redis list of messages but for now all we do is notify of the message
+ and give it's content.
+
+The application uses the TypeSafe Redis Plugin and the AMQP client for RabbitMQ as local dependency. All configurations
+  are left as defaults.
+
+

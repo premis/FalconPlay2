@@ -23,6 +23,8 @@ import java.util.Date;
  */
 public class ConsumerService {
 
+    public final static String QUEUE_NAME = "hello";
+
     private static Thread consumerThread = null;
 
     /**
@@ -48,11 +50,11 @@ public class ConsumerService {
                     Connection connection = factory.newConnection();
                     Channel channel = connection.createChannel();
 
-                    channel.queueDeclare(Global.QUEUE_NAME, false, false, false, null);
+                    channel.queueDeclare(QUEUE_NAME, false, false, false, null);
                     Logger.info(" [*] Waiting for messages. To exit press CTRL+C");
 
                     QueueingConsumer consumer = new QueueingConsumer(channel);
-                    channel.basicConsume(Global.QUEUE_NAME, true, consumer);
+                    channel.basicConsume(QUEUE_NAME, true, consumer);
 
                     while (true) {
                         QueueingConsumer.Delivery delivery = consumer.nextDelivery();
