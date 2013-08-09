@@ -48,11 +48,11 @@ public class ConsumerService {
                     Connection connection = factory.newConnection();
                     Channel channel = connection.createChannel();
 
-                    channel.queueDeclare("hello", false, false, false, null);
+                    channel.queueDeclare(Global.QUEUE_NAME, false, false, false, null);
                     Logger.info(" [*] Waiting for messages. To exit press CTRL+C");
 
                     QueueingConsumer consumer = new QueueingConsumer(channel);
-                    channel.basicConsume("hello", true, consumer);
+                    channel.basicConsume(Global.QUEUE_NAME, true, consumer);
 
                     while (true) {
                         QueueingConsumer.Delivery delivery = consumer.nextDelivery();

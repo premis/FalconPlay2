@@ -96,8 +96,8 @@ public class Messager extends Controller {
                 Connection connection = factory.newConnection();
                 Channel channel = connection.createChannel();
 
-                channel.queueDeclare("hello", false, false, false, null);
-                channel.basicPublish("", "hello", null, value.getBytes());
+                channel.queueDeclare(Global.QUEUE_NAME, false, false, false, null);
+                channel.basicPublish("", Global.QUEUE_NAME, null, value.getBytes());
                 Logger.info(" published '" + value + "'");
 
                 broadcast(value+" was received from a client!");
