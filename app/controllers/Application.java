@@ -13,7 +13,7 @@ public class Application extends Controller {
   
     public static Result index() {
 
-        return redirect(routes.MessagerController.getMessagerPage());
+        return redirect(routes.Messager.getMessagerPage());
 
     }
 

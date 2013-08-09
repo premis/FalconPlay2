@@ -21,10 +21,10 @@ GET         /assets/*file                controllers.Assets.at(path="/public", f
 
 # Messaging pages and actions
 
-GET         /messager                    controllers.MessagerController.getMessagerPage()
+GET         /messager                    controllers.Messager.getMessagerPage()
 
-POST        /messager/pushmessage        controllers.MessagerController.postMessage()
+POST        /messager/pushmessage        controllers.Messager.postMessage()
 
-GET         /messager/handle             controllers.MessagerController.registerSocket()
+GET         /messager/handle             controllers.Messager.registerSocket()
 
-POST        /messager/deleteall          controllers.MessagerController.deleteAllMessages()
+POST        /messager/deleteall          controllers.Messager.deleteAllMessages()

@@ -1,6 +1,6 @@
 // @SOURCE:/Users/premis/Documents/workspace/FalconPlay/conf/routes
-// @HASH:3601b03765a9f0dd561b6db06f48a0eb41c31077
-// @DATE:Fri Aug 09 02:13:54 EEST 2013
+// @HASH:b0ae279b51821110937c462f9c8f0be7ca0e4d85
+// @DATE:Fri Aug 09 03:22:56 EEST 2013
 
 import Routes.{prefix => _prefix, defaultPrefix => _defaultPrefix}
 import play.core._
@@ -26,7 +26,7 @@ package controllers {
 // @LINE:28
 // @LINE:26
 // @LINE:24
-class ReverseMessagerController {
+class ReverseMessager {
     
 
 // @LINE:26
@@ -97,12 +97,12 @@ package controllers.javascript {
 // @LINE:28
 // @LINE:26
 // @LINE:24
-class ReverseMessagerController {
+class ReverseMessager {
     
 
 // @LINE:26
 def postMessage : JavascriptReverseRoute = JavascriptReverseRoute(
-   "controllers.MessagerController.postMessage",
+   "controllers.Messager.postMessage",
    """
       function() {
       return _wA({method:"POST", url:"""" + _prefix + { _defaultPrefix } + """" + "messager/pushmessage"})
@@ -113,7 +113,7 @@ def postMessage : JavascriptReverseRoute = JavascriptReverseRoute(
 
 // @LINE:30
 def deleteAllMessages : JavascriptReverseRoute = JavascriptReverseRoute(
-   "controllers.MessagerController.deleteAllMessages",
+   "controllers.Messager.deleteAllMessages",
    """
       function() {
       return _wA({method:"POST", url:"""" + _prefix + { _defaultPrefix } + """" + "messager/deleteall"})
@@ -124,7 +124,7 @@ def deleteAllMessages : JavascriptReverseRoute = JavascriptReverseRoute(
 
 // @LINE:24
 def getMessagerPage : JavascriptReverseRoute = JavascriptReverseRoute(
-   "controllers.MessagerController.getMessagerPage",
+   "controllers.Messager.getMessagerPage",
    """
       function() {
       return _wA({method:"GET", url:"""" + _prefix + { _defaultPrefix } + """" + "messager"})
@@ -135,7 +135,7 @@ def getMessagerPage : JavascriptReverseRoute = JavascriptReverseRoute(
 
 // @LINE:28
 def registerSocket : JavascriptReverseRoute = JavascriptReverseRoute(
-   "controllers.MessagerController.registerSocket",
+   "controllers.Messager.registerSocket",
    """
       function() {
       return _wA({method:"GET", url:"""" + _prefix + { _defaultPrefix } + """" + "messager/handle"})
@@ -198,30 +198,30 @@ package controllers.ref {
 // @LINE:28
 // @LINE:26
 // @LINE:24
-class ReverseMessagerController {
+class ReverseMessager {
     
 
 // @LINE:26
 def postMessage(): play.api.mvc.HandlerRef[_] = new play.api.mvc.HandlerRef(
-   controllers.MessagerController.postMessage(), HandlerDef(this, "controllers.MessagerController", "postMessage", Seq(), "POST", """""", _prefix + """messager/pushmessage""")
+   controllers.Messager.postMessage(), HandlerDef(this, "controllers.Messager", "postMessage", Seq(), "POST", """""", _prefix + """messager/pushmessage""")
 )
                       
 
 // @LINE:30
 def deleteAllMessages(): play.api.mvc.HandlerRef[_] = new play.api.mvc.HandlerRef(
-   controllers.MessagerController.deleteAllMessages(), HandlerDef(this, "controllers.MessagerController", "deleteAllMessages", Seq(), "POST", """""", _prefix + """messager/deleteall""")
+   controllers.Messager.deleteAllMessages(), HandlerDef(this, "controllers.Messager", "deleteAllMessages", Seq(), "POST", """""", _prefix + """messager/deleteall""")
 )
                       
 
 // @LINE:24
 def getMessagerPage(): play.api.mvc.HandlerRef[_] = new play.api.mvc.HandlerRef(
-   controllers.MessagerController.getMessagerPage(), HandlerDef(this, "controllers.MessagerController", "getMessagerPage", Seq(), "GET", """""", _prefix + """messager""")
+   controllers.Messager.getMessagerPage(), HandlerDef(this, "controllers.Messager", "getMessagerPage", Seq(), "GET", """""", _prefix + """messager""")
 )
                       
 
 // @LINE:28
 def registerSocket(): play.api.mvc.HandlerRef[_] = new play.api.mvc.HandlerRef(
-   controllers.MessagerController.registerSocket(), HandlerDef(this, "controllers.MessagerController", "registerSocket", Seq(), "GET", """""", _prefix + """messager/handle""")
+   controllers.Messager.registerSocket(), HandlerDef(this, "controllers.Messager", "registerSocket", Seq(), "GET", """""", _prefix + """messager/handle""")
 )
                       
     
